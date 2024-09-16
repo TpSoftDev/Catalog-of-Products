@@ -12,8 +12,8 @@ body {
 
 /* Hero Section */
 .hero-section {
-          height: 70vh;
-          background-image: url('./images/Maple-Contractors-Choice-Pacific-Hardwood-Nike-4-1200x500.jpg');
+          height: 50vh;
+          background-image: url('./images/Home_Page.jpg');
           background-size: cover;
           background-position: center;
           position: relative;
