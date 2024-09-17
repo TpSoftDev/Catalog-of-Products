@@ -2,119 +2,153 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authors Page</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet"> <!-- External CSS file -->
-    <style>
-        /* Internal CSS for styling */
-        .author-info {
-            margin-top: 50px;
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            padding: 40px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            line-height: 1.8; /* Improves line spacing for better readability */
-        }
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Authors Page</title>
+          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+          <link href="style.css" rel="stylesheet"> <!-- External CSS file -->
+          <style>
+                    /* Internal CSS for styling */
+                    .author-info {
+                              margin-top: 50px;
+                              background-color: #f9f9f9;
+                              border-radius: 10px;
+                              padding: 40px;
+                              box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                              line-height: 1.8;
+                              /* Improves line spacing for better readability */
+                    }
 
-        .author-info h2 {
-            font-size: 32px;
-            margin-bottom: 25px;
-        }
+                    .author-info h2 {
+                              font-size: 32px;
+                              margin-bottom: 25px;
+                    }
 
-        .author-info p {
-            font-size: 20px;
-            color: #555;
-        }
+                    .author-info p {
+                              font-size: 20px;
+                              color: #555;
+                    }
 
-        .author-card {
-            margin-bottom: 40px;
-        }
+                    .author-card {
+                              margin-bottom: 40px;
+                    }
 
-        .author-card h5 {
-            margin-bottom: 15px;
-            color: #333;
-        }
+                    .author-card h5 {
+                              margin-bottom: 15px;
+                              color: #333;
+                    }
 
-        .author-card a {
-            color: #007bff;
-        }
+                    .author-card a {
+                              color: #007bff;
+                    }
 
-        .author-card img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
+                    .author-card img {
+                              border-radius: 50%;
+                              width: 150px;
+                              height: 150px;
+                              object-fit: cover;
+                              margin-bottom: 20px;
+                    }
 
-        .footer {
-            margin-top: 50px;
-            background-color: #f1f1f1;
-            padding: 20px;
-        }
-    </style>
+                    .footer {
+                              margin-top: 50px;
+                              background-color: #f1f1f1;
+                              padding: 20px;
+                    }
+          </style>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">StepUp Sneakers Inc.</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
-                <li class="nav-item"><a class="nav-link" href="authors.html">Authors</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Author Information Section -->
-    <div class="container author-info">
-        <h2 class="text-center">Authors Information</h2>
-        <p class="text-center">Course: COM S/SE 3190: Construction of User Interfaces</p>
-        <p class="text-center">Professor: Dr. Abraham Aldaco</p>
-        <p class="text-center">Date: September 16, 2024</p>
-
-        <div class="row mt-5">
-            <!-- Author 1 -->
-            <div class="col-md-6 author-card">
-                <div class="card shadow-sm text-center">
-                    <div class="card-body">
-                        <img src="images/author1.jpg" alt="Author 1 Image">
-                        <h5 class="card-title">Andrew Smith</h5>
-                        <p class="card-text">Email: <a href="mailto:andrew@example.com">andrew@example.com</a></p>
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light"
+                    style="background-color: #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                    <a class="navbar-brand font-weight-bold text-uppercase" href="#"
+                              style="font-size: 1.5rem; color: #495057;">
+                              StepUp Sneakers Inc.
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                                  <a class="nav-link text-uppercase" href="index.html"
+                                                            style="color: #495057; font-weight: 600; transition: color 0.3s, text-decoration 0.3s;">
+                                                            Home
+                                                  </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                  <a class="nav-link text-uppercase" href="catalog.html"
+                                                            style="color: #495057; font-weight: 600; transition: color 0.3s, text-decoration 0.3s;">
+                                                            Catalog
+                                                  </a>
+                                        </li>
+                                        <li class="nav-item">
+                                                  <a class="nav-link text-uppercase" href="authors.html"
+                                                            style="color: #495057; font-weight: 600; transition: color 0.3s, text-decoration 0.3s;">
+                                                            Authors
+                                                  </a>
+                                        </li>
+                              </ul>
                     </div>
-                </div>
-            </div>
-            <!-- Author 2 -->
-            <div class="col-md-6 author-card">
-                <div class="card shadow-sm text-center">
-                    <div class="card-body">
-                        <img src="./images/Thabang.JPEG" alt="Author 2 Image">
-                        <h5 class="card-title">Thabang Pila</h5>
-                        <p class="card-text">Email: <a href="mailto:tp.softwaredev@gmail.com">tp.softwaredev@gmail.com</a></p>
+          </nav>
+
+          <!-- CSS for hover effect -->
+          <style>
+                    .navbar-nav .nav-link:hover {
+                              color: #007bff;
+                              /* Change to your desired hover color */
+                              text-decoration: underline;
+                    }
+          </style>
+
+
+          <!-- Author Information Section -->
+          <div class="container author-info">
+                    <h2 class="text-center">Authors Information</h2>
+                    <p class="text-center">Course: COM S/SE 3190: Construction of User Interfaces</p>
+                    <p class="text-center">Professor: Dr. Abraham Aldaco</p>
+                    <p class="text-center">Date: September 16, 2024</p>
+
+                    <div class="row mt-5">
+                              <!-- Author 1 -->
+                              <div class="col-md-6 author-card">
+                                        <div class="card shadow-sm text-center">
+                                                  <div class="card-body">
+                                                            <img src="images/author1.jpg" alt="Author 1 Image">
+                                                            <h5 class="card-title">Andrew Smith</h5>
+                                                            <p class="card-text">Email: <a
+                                                                                href="mailto:andrew@example.com">andrew@example.com</a>
+                                                            </p>
+                                                  </div>
+                                        </div>
+                              </div>
+                              <!-- Author 2 -->
+                              <div class="col-md-6 author-card">
+                                        <div class="card shadow-sm text-center">
+                                                  <div class="card-body">
+                                                            <img src="./images/Thabang.JPEG" alt="Author 2 Image">
+                                                            <h5 class="card-title">Thabang Pila</h5>
+                                                            <p class="card-text">Email: <a
+                                                                                href="mailto:tp.softwaredev@gmail.com">tp.softwaredev@gmail.com</a>
+                                                            </p>
+                                                  </div>
+                                        </div>
+                              </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+          </div>
 
-    <!-- Footer -->
-    <footer class="footer text-center">
-        <p>&copy; 2024 StepUp Sneakers Inc. All Rights Reserved.</p>
-    </footer>
+          <!-- Footer -->
+          <footer class="footer text-center">
+                    <p>&copy; 2024 StepUp Sneakers Inc. All Rights Reserved.</p>
+          </footer>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <!-- Bootstrap JS and dependencies -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
