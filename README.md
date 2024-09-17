@@ -50,8 +50,4 @@ The website is structured to enhance user navigation and experience. It consists
 - All images are stored in organized folders, categorized by sneaker collection or product type for ease of access and updating.
 - Descriptions are tailored to match each sneaker’s unique style and features, giving users relevant and engaging information.
 
----
 
-Whether you're looking to showcase a stylish sneaker portfolio, build an e-commerce site, or just explore web development techniques, this project serves as a perfect starting point. StepUp Sneakers Inc. combines a passion for sneakers with professional web design to offer a compelling online shopping experience. 
-
-Start exploring our collections now and find your next pair of sneakers!
