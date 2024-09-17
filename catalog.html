@@ -2,109 +2,149 @@
 <html lang="en">
 
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Catalog Page</title>
-          <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-          <link href="style.css" rel="stylesheet"> <!-- External CSS file -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment - StepUp Sneakers Inc.</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> <!-- External CSS file -->
+    <style>
+        /* Style for the product card images */
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
 
+        /* Hover effect on cards */
+        .card:hover {
+            transform: translateY(-10px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-          
-          <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg navbar-light"
-                    style="background-color: #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <a class="navbar-brand font-weight-bold text-uppercase" href="#"
-                              style="font-size: 1.5rem; color: #495057;">
-                              StepUp Sneakers Inc.
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                              <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item">
-                                                  <a class="nav-link text-uppercase" href="index.html"
-                                                            style="color: #495057; font-weight: 600; transition: color 0.3s, text-decoration 0.3s;">
-                                                            Home
-                                                  </a>
-                                        </li>
-                                        <li class="nav-item">
-                                                  <a class="nav-link text-uppercase" href="catalog.html"
-                                                            style="color: #495057; font-weight: 600; transition: color 0.3s, text-decoration 0.3s;">
-                                                            Catalog
-                                                  </a>
-                                        </li>
-                                        <li class="nav-item">
-                                                  <a class="nav-link text-uppercase" href="authors.html"
-                                                            style="color: #495057; font-weight: 600; transition: color 0.3s, text-decoration 0.3s;">
-                                                            Authors
-                                                  </a>
-                                        </li>
-                              </ul>
-                    </div>
-          </nav>
 
-          <!-- CSS for hover effect -->
-          <style>
-                    .navbar-nav .nav-link:hover {
-                              color: #007bff;
-                              /* Change to your desired hover color */
-                              text-decoration: underline;
-                    }
-          </style>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <a class="navbar-brand font-weight-bold text-uppercase" href="index.html" style="font-size: 1.5rem; color: #495057;">
+        StepUp Sneakers Inc.
+    </a>    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="index.html" style="color: #495057; font-weight: 600; transition: color 0.3s, text-decoration 0.3s;">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="catalog.html" style="color: #495057; font-weight: 600; transition: color 0.3s, text-decoration 0.3s;">
+                    Equipment
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="authors.html" style="color: #495057; font-weight: 600; transition: color 0.3s, text-decoration 0.3s;">
+                    Authors
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-<h1> Catalog Of Sneakers Here </h1>
+<!-- CSS for hover effect -->
+<style>
+    .navbar-nav .nav-link:hover {
+        color: #007bff;
+        text-decoration: underline;
+    }
+</style>
 
+<!-- Hero2 Section -->
+<header class="hero2-section jumbotron jumbotron-fluid text-center text-white d-flex align-items-center">
+    <div class="overlay"></div>
+    <div class="container content">
+        <h1 class="display-4">Fitness Essentials</h1>
+        <p class="lead">Quality You Can Trust</p>
+    </div>
+</header>
 
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Our Fitness Equipment</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="./images/dumbbell.jpg" class="card-img-top" alt="Adjustable Dumbbell Set">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Adjustable Dumbbell Set</h5>
+                    <p class="card-text">Compact and space-saving dumbbells with adjustable weights from 5 to 45 lbs. Total included weight is 240 lbs.</p>
+                    <p class="card-text">$199.99</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="./images/benchpress.jpg" class="card-img-top" alt="Adjustable Bench Set">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Adjustable Bench Set</h5>
+                    <p class="card-text">Versatile bench with adjustable positions and bar, ideal for strength training exercises.</p>
+                    <p class="card-text">$299.99</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="./images/kettlebell.jpg" class="card-img-top" alt="Kettlebell">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Kettlebell Set</h5>
+                    <p class="card-text">Set of kettlebells ranging from 10 to 40 lbs.</p>
+                    <p class="card-text">$499.99</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="./images/weightmachine.jpg" class="card-img-top" alt="Multi-Function Weight Machine">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Multi-Function Weight Machine</h5>
+                    <p class="card-text">All-in-one weight machine for pull-downs, bench press, and more.</p>
+                    <p class="card-text">$899.99</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="./images/yogakit.jpg" class="card-img-top" alt="Yoga Kit">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Yoga Kit</h5>
+                    <p class="card-text">Complete yoga kit with a non-slip mat, resistance bands, dumbbell, and stability ball for a full-body workout at home or the gym.</p>
+                    <p class="card-text">$49.99</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="./images/foamroller.jpg" class="card-img-top" alt="High-Density Foam Roller">
+                <div class="card-body text-center">
+                    <h5 class="card-title">High-Density Foam Roller</h5>
+                    <p class="card-text">Perfect for muscle recovery and improving flexibility.</p>
+                    <p class="card-text">$19.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Footer -->
+<footer class="footer text-center mt-5 py-4 bg-light">
+    <p>&copy; 2024 StepUp Sneakers Inc. All Rights Reserved.</p>
+</footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <!-- Footer -->
-          <footer class="footer text-center">
-                    <p>&copy; 2024 StepUp Sneakers Inc. All Rights Reserved.</p>
-          </footer>
-
-          <!-- Bootstrap JS and dependencies -->
-          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
