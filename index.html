@@ -8,25 +8,69 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet"> <!-- External CSS file -->
+    <style>
+        /* Style for the sneaker card images */
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        /* Hover effect on cards */
+        .card:hover {
+            transform: translateY(-10px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">StepUp Sneakers Inc.</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
-                <li class="nav-item"><a class="nav-link" href="authors.html">Authors</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
+
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <a class="navbar-brand font-weight-bold text-uppercase" href="#" style="font-size: 1.5rem; color: #495057;">
+        StepUp Sneakers Inc.
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="index.html" style="color: #495057; font-weight: 600; transition: color 0.3s, text-decoration 0.3s;">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="catalog.html" style="color: #495057; font-weight: 600; transition: color 0.3s, text-decoration 0.3s;">
+                    Catalog
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-uppercase" href="authors.html" style="color: #495057; font-weight: 600; transition: color 0.3s, text-decoration 0.3s;">
+                    Authors
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- CSS for hover effect -->
+<style>
+    .navbar-nav .nav-link:hover {
+        color: #007bff; /* Change to your desired hover color */
+        text-decoration: underline;
+    }
+</style>
+
+
+
+
+
+
+<!-- Hero Section -->
     <header class="hero-section jumbotron jumbotron-fluid text-center text-white d-flex align-items-center">
         <div class="overlay"></div>
         <div class="container content">
@@ -36,48 +80,91 @@
         </div>
     </header>
 
-    <!-- Featured Products Section -->
+
+
+
+
+
+
+<!-- Featured Products Section -->
     <div class="container mt-5">
         <h2 class="text-center mb-4">Trending Sneakers</h2>
-        <div class="row featured-products">
+        <div class="row">
+            <!-- Sneaker 1 -->
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="./images/Nike AirForce.jpg" class="card-img-top" alt="Sneaker 1">
+                <div class="card h-100">
+                    <img src="./images/Nike AirForce.jpg" class="card-img-top" alt="Nike Air Max 2024">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Air Max 2024</h5>
+                        <h5 class="card-title">Nike Air Max 2024</h5>
                         <p class="card-text">$199.99</p>
-                    
                     </div>
                 </div>
             </div>
+            <!-- Sneaker 2 -->
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="./images/Nike AirForce.jpg" class="card-img-top" alt="Sneaker 2">
+                <div class="card h-100">
+                    <img src="./images/Nike AirForce.jpg" class="card-img-top" alt="Adidas Ultra Boost Plus">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Ultra Boost Plus</h5>
+                        <h5 class="card-title">Adidas Ultra Boost Plus</h5>
                         <p class="card-text">$179.99</p>
                     </div>
                 </div>
             </div>
+            <!-- Sneaker 3 -->
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="./images/Nike AirForce.jpg" class="card-img-top" alt="Sneaker 3">
+                <div class="card h-100">
+                    <img src="./images/Nike AirForce.jpg"class="card-img-top" alt="Vans Classic">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Classic Vans</h5>
+                        <h5 class="card-title">Vans Classic</h5>
                         <p class="card-text">$89.99</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sneaker 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./images/Nike AirForce.jpg" class="card-img-top" alt="Yeezy Boost 350">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Yeezy Boost 350</h5>
+                        <p class="card-text">$299.99</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sneaker 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./images/Nike AirForce.jpg" class="card-img-top" alt="Air Jordan Retro 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Air Jordan Retro 1</h5>
+                        <p class="card-text">$219.99</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sneaker 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./images/Nike AirForce.jpg" class="card-img-top" alt="Converse Chuck Taylor">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Converse Chuck Taylor</h5>
+                        <p class="card-text">$59.99</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer text-center py-4 mt-5">
-        <p>&copy; 2024 StepUp Sneakers Inc.</p>
 
+
+
+
+
+<!-- Footer -->
+    <footer class="footer text-center mt-5 py-4 bg-light">
+        <p>&copy; 2024 StepUp Sneakers Inc. All Rights Reserved.</p>
     </footer>
 
-    <!-- Bootstrap JS and dependencies -->
+
+<!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
